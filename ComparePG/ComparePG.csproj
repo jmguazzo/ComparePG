@@ -82,12 +82,7 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>del $(SolutionDir)\executable.zip /q
-md $(SolutionDir)\executable
-copy comparepg.exe $(SolutionDir)\executable
-copy *.dll $(SolutionDir)\executable
-powershell Compress-Archive -Path $(SolutionDir)\executable -DestinationPath $(SolutionDir)\executable.zip
-del $(SolutionDir)\executable\* /q
-rd $(SolutionDir)\executable</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
