@@ -2,7 +2,7 @@ language: csharp
 solution: ComparePG.sln
 deploy:
   provider: releases
-  api_key: "f8ff459252a30b9eb7afb505b6c2e17cd37e77c7"
+  api_key: "21a5bf503d468471ed035640440e13c45bab4c9f"
   file_glob: true
   file: 
     - "ComparePG/bin/Release/ComparePG.exe"
