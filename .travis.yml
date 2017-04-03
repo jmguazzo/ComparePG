@@ -1,0 +1,10 @@
+language: csharp
+solution: ComparePG.sln
+deploy:
+  provider: releases
+  api_key: "904f6a61048880eb62520c11613d9672e610ce26"
+  file_glob: true
+  file: "executable.zip"
+  skip_cleanup: true
+  on:
+    tags: true
