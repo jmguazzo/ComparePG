@@ -4,9 +4,8 @@ deploy:
   provider: releases
   api_key:
     secure: ACP1vkEHHlDQG7BMaROT340S+0PaodcmZJcP/fuctJGUvXMBw3j0n3KFukVklr6AjHpPX/Q1wbhmFiWweGMUOOCQxDHCUjVP7s9U1z5WlFgnovz0F4ahcgo6XzwTpgXHLSU92b1cGmxrgOimltrmTrdi+gSGMx8KIrtZUjq8ZuKlj7PGSs7qsFsU10xUJ3jm4e8k1ioiRrIQOCgEyp0V+Pd6j7/OPl6d/x0zIUGDj9ShluHrG26qJ9vmTW7WnnTNU86d6anlZ+j51QrvewtriSrJh+nvx1Cs0XDy2qO/vOa69dcMoK4KV5Olls1pCws0t40G34mtrbQcRaKa8uSZRFRG/JbsjAqdoeICjjZWdOOGE14BLrD6J9Doe2iV+TpBVmGdQ4TOQ8u7VMRLI+88f/WD9Lhe714wri5hWRVP7LtJI22rr0D2XadrWaH+Jb060/ygL4ICqx2bQ3r2y5wK4GeD3zBxr96d7+G/dFWUj6Ljl2ul+D8tIctbH7w9uowG5vBYhQ9VDAYLu137F/HBfbU8DuRQM8NXW2DwdloctrQs6WTSydvMsiN9RpBJP0fp0kx3u/hYPW4wRU2yGKa68No0UUJsUiOfMx1slBI08yc6kbgzcNmde9S8ANmjLQStM9ET+zAElfytSUJdKXwnmvcrJYw/MeCDNxJkb8TTGec=
-  file_glob: true
   file: 
-    - "ComparePG/bin/Release/*"
+    - "ComparePG.zip"
   skip_cleanup: true 
   on:
     tags: true
