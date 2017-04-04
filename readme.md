@@ -1,4 +1,4 @@
-# ComparePG - PostgreSQL schema comparison in C#
+# ComparePG - PostgreSQL schema comparison in C# - [![Build Status](https://travis-ci.org/ncareau/ComparePG.svg?branch=master)](https://travis-ci.org/ncareau/ComparePG)
 
 This tool compares two PostgreSQL database and generate the script to adapt the target database.
 
