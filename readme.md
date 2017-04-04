@@ -34,7 +34,7 @@ As of now, ComparePG can find dependencies on 1 level and warns you when it find
 ```
 
 ### Download
-An [executable](executable.zip) version is available.
+An [executable](https://github.com/ncareau/ComparePG/releases) version is available.
 
 ### Usage
 
