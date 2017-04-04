@@ -87,6 +87,7 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
+  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
   <Target Name="AfterBuild">
     <MakeDir Directories=".\deploy" />
     <ItemGroup>
@@ -99,5 +100,5 @@
     </CreateItem>
     <Zip ZipFileName="..\ComparePG.zip" WorkingDirectory=".\deploy" Files="@(ZipFiles)" />
   </Target>
-  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
+
 </Project>
