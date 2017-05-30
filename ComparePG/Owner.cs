@@ -11,7 +11,7 @@ namespace ComparePG
         WHEN c.relkind = 'v' THEN 'VIEW' 
         ELSE c.relkind::varchar END as {Constants.ELEMENT_TYPE}
 FROM pg_class AS c
-INNER JOIN pg_authid AS a ON (a.oid = c.relowner)
+INNER JOIN pg_roles AS a ON (a.oid = c.relowner)
 INNER JOIN pg_namespace AS n ON (n.oid = c.relnamespace)
 WHERE n.nspname='{Constants.REPLACEMENT_SCHEMA}' 
 AND (

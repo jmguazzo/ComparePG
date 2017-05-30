@@ -9,7 +9,7 @@ namespace ComparePG
 {
     class Validation
     {
-        string regexNamingRule = "^[a-zA-Z0-9]+$";
+        string regexNamingRule = "^[a-zA-Z0-9_]+$";
 
         internal bool CheckDb(Database sourceDb)
         {
@@ -26,7 +26,7 @@ namespace ComparePG
 
         internal string Usage()
         {
-            return "!! Database and Schema must be alphanumeric !! (^[a-zA-Z0-9]+$)";
+            return "!! Database and Schema must be alphanumeric !! (^[a-zA-Z0-9_]+$)";
         }
     }
 }
