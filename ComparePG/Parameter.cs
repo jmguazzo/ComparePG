@@ -25,7 +25,7 @@ namespace ComparePG
                 {
                     string argument = args[i];
                     string[] argumentSplit = argument.Split('=');
-                    string key = argumentSplit[0].ToUpperInvariant();
+                    string key = argumentSplit[0];
                     string value = argumentSplit.Length > 1 ? argumentSplit[1] : string.Empty;
                     AddKeyValue(key, value);
                 }
@@ -57,7 +57,7 @@ namespace ComparePG
             if (dicToAdd != null)
             {
                 keyWithoutSuffix = key.Substring(0, key.Length - suffix.Length);
-                dicToAdd.Add(keyWithoutSuffix, value);
+                dicToAdd.Add(keyWithoutSuffix.ToUpperInvariant(), value);
             }
             else
             {
